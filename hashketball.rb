@@ -168,8 +168,8 @@ end
 def player_numbers(team)
   jersey_numbers = []
   game_hash.each do |key, value|
-    if team = value[:team_name]
-    value[:players]
+    if value[:team_name] = team
+      value[:players].each do |attribute, stats|
     jersey_numbers << value[:team_name]
   end
   return jersey_numbers
