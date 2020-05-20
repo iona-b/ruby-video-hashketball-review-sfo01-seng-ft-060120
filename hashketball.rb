@@ -180,9 +180,5 @@ end
 
     #if game_hash[key][:team_name] == team
       #value[:players].each do |attribute, data|
-        jersey_numbers.push(attribute[:number])
-      end
-    end
-  end
-  return jersey_numbers
-end
+        #jersey_numbers.push(attribute[:number])
+      
