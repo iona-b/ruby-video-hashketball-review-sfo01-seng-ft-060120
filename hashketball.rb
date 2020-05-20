@@ -194,7 +194,7 @@ def big_shoe_rebounds
     value[:players].each do |attributes, stats|
       if attributes[:shoe] > biggest_shoe_size
         biggest_shoe_size = attributes[:shoe]
-        biggest_shoe_player = attributes[:player]
+        biggest_shoe_player = attributes[:rebounds]
         binding.pry
       end
     end
