@@ -195,9 +195,9 @@ def big_shoe_rebounds
       if attributes[:shoe] > biggest_shoe_size
         biggest_shoe_size = attributes[:shoe]
         biggest_shoe_player = attributes[:player]
+        binding.pry
       end
     end
   end
-  binding.pry
   return biggest_shoe_player
 end
