@@ -177,7 +177,7 @@ def player_numbers(team)
   return jersey_numbers
 end
 
-def player_stats (name)
+def player_stats (player)
   game_hash.each do |key, value|
     value[:players].each do |attribute|
       if attribute[:player_name] == player
