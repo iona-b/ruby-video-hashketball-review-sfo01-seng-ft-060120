@@ -160,6 +160,7 @@ end
 def team_names
   teams = []
   game_hash.each do |key, value|
+    binding.pry
     teams << value[:team_name]
   end
 end
