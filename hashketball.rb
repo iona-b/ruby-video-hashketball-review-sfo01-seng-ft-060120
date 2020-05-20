@@ -168,9 +168,19 @@ end
 def player_numbers(team)
   jersey_numbers = []
   game_hash.each do |key, value|
-    if value[:team_name] = team
+    if key[:team_name] = team
       value[:players].each do |attributes|
         jersey_numbers << attributes[:number]
+      end
+    end
+  end
+  return jersey_numbers
+end
+
+
+    #if game_hash[key][:team_name] == team
+      #value[:players].each do |attribute, data|
+        jersey_numbers.push(attribute[:number])
       end
     end
   end
